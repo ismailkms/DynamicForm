@@ -1,0 +1,62 @@
+﻿
+@using EntityLayer.Concrete
+@model List<Form>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered">
+            <tr>
+                <th>Adı</th>
+                <th>Oluşturulma Tarihi</th>
+                <th>Detay</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.CreatedAt.ToString("dd MMM yyyy")</td>
+                    <td><a href="/Form/forms/@item.Id" class="btn btn-success">Detay</a></td>
+                </tr>
+            }
+
+        </table>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Yeni Form Ekle
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Form Ekle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form method="post" action="/Form/AddForm">
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label>Ad</label>
+                            <input type="text" class="form-control" name="Name" required="">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                        <button type="submit" class="btn btn-primary">Ekle</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+

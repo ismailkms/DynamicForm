@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        #css1 {
+            margin: 0 auto;
+            width: 30%;
+            background-color: #dcdcdc;
+            padding: 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row" style="padding:30px;">
+        <div class="col-md-12>" id="css1">
+            <form method="post">
+                <div class="form-group">
+                    <label>Kullanıcı Adı</label>
+                    <input type="text" class="form-control" name="Username" required="">
+                </div>
+                <div class="form-group">
+                    <label>Şifre</label>
+                    <input type="password" class="form-control" name="Password" required="">
+                </div>
+                @if(ViewBag.Error != "")
+                {
+                    <p class="text-danger">@ViewBag.Error</p>
+                }
+                <button type="submit" class="btn btn-primary submit">Giriş Yap</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+﻿
+@model EntityLayer.Concrete.Form
+
+@{
+    ViewData["Title"] = "forms";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <p>@Model.Name </p>
+        @Html.Raw(Model.Description)
+    </div>
+
+</div>
+

@@ -1,0 +1,12 @@
+C:\Users\lenovopc\source\repos\Form\EntityLayer\bin\Debug\net5.0\EntityLayer.deps.json
+C:\Users\lenovopc\source\repos\Form\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\Users\lenovopc\source\repos\Form\EntityLayer\bin\Debug\net5.0\ref\EntityLayer.dll
+C:\Users\lenovopc\source\repos\Form\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\Users\lenovopc\source\repos\Form\EntityLayer\obj\Debug\net5.0\EntityLayer.csprojAssemblyReference.cache
+C:\Users\lenovopc\source\repos\Form\EntityLayer\obj\Debug\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovopc\source\repos\Form\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\lenovopc\source\repos\Form\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfo.cs
+C:\Users\lenovopc\source\repos\Form\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\lenovopc\source\repos\Form\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
+C:\Users\lenovopc\source\repos\Form\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
+C:\Users\lenovopc\source\repos\Form\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
